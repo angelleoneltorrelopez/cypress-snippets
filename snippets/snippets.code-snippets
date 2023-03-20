@@ -1,0 +1,368 @@
+{
+    "cypress Project": {
+        "prefix": "cyProject",
+        "body": [
+            "describe('${1:This is your test project title}', () => {",
+            "   beforeEach(() => {",
+            "       cy.visit('${2:url}')",
+            "   })",
+            "   it('${3:test case description}', () => {",
+            "       ${4:// code here}",
+            "   })",
+            "})"
+        ],
+        "description": "Cypress test with basic functions"
+    },
+    "Cypress describe": {
+        "prefix": "cyDescribe",
+        "body": [
+            "describe('${1:test description}', () => {",
+            "   ${0:// code here}",
+            "})"
+        ],
+        "description": "function describe"
+    },
+    "Cypress context": {
+		"prefix": "cyContext",
+		"body": [
+			"context('$1', () => {",
+			"   ${0:// code here}",
+			"});"
+		],
+		"description": "context"
+	},
+    "Cypress before": {
+		"prefix": "cyBefore",
+		"body": [
+			"before(() => {",
+			"   ${0:// code here}",
+			"});"
+		],
+		"description": "before"
+	},
+	"Cypress beforeEach": {
+		"prefix": "cyBeforeEach",
+		"body": [
+			"beforeEach(() => {",
+			"   ${0:// code here}",
+			"});"
+		],
+		"description": "beforeEach"
+	},
+    "Cypress it": {
+		"prefix": "cyIt",
+		"body": [
+			"it('$1', () => {",
+			"   ${0:// code here}",
+			"});"
+		],
+		"description": "it"
+	},
+    "Cypress after": {
+		"prefix": "cyAfter",
+		"body": [
+			"after(() => {",
+			"   ${0:// code here}",
+			"});"
+		],
+		"description": "after"
+	},
+	"Cypress afterEach": {
+		"prefix": "cyAfterEach",
+		"body": [
+			"afterEach(() => {",
+			"   ${0:// code here}",
+			"});"
+		],
+		"description": "afterEach"
+	},
+    "Cypress visit": {
+		"prefix": "cyVisit",
+		"body": [
+			"cy.visit('${1:url}');$0"
+		],
+		"description": "visit"
+	},
+    "Cypress get": {
+		"prefix": "cyGet",
+		"body": [
+			"cy.get('$1');$0"
+		],
+		"description": "get"
+	},
+    "Cypress check": {
+		"prefix": "cyCheck",
+		"body": [
+			"cy.get('$1').check('$2');$0"
+		],
+		"description": "check"
+	},
+    "Cypress uncheck": {
+		"prefix": "cyUncheck",
+		"body": [
+			".uncheck('$1');$0"
+		],
+		"description": "uncheck"
+	},
+    "Cypress contains": {
+		"prefix": "cyContains",
+		"body": [
+			".contains('$1');$0"
+		],
+		"description": "contains"
+	},
+    "Cypress find": {
+		"prefix": "cyFind",
+		"body": [
+			".find('$1');$0"
+		],
+		"description": "find"
+	},
+    "Cypress type": {
+		"prefix": "cyType",
+		"body": [
+			".type('$1');$0"
+		],
+		"description": "type"
+	},
+    "Cypress clear": {
+		"prefix": "cyClear",
+		"body": [
+			".clear($1);$0"
+		],
+		"description": "clear"
+	},
+    "Cypress click": {
+		"prefix": "cyClick",
+		"body": [
+			".click($1);$0"
+		],
+		"description": "click"
+	},
+    "Cypress dblclick": {
+		"prefix": "cyDblClick",
+		"body": [
+			".dblclick($1);$0"
+		],
+		"description": "dblclick"
+	},
+    "Cypress rightclick": {
+		"prefix": "cyRightClick",
+		"body": [
+			".rightclick($1);$0"
+		],
+		"description": "rightclick"
+	},
+    "Cypress wait": {
+		"prefix": "cyWait",
+		"body": [
+			"cy.wait('$1');$0"
+		],
+		"description": "wait"
+	},
+    "Cypress wait element": {
+		"prefix": "cyWaitElement",
+		"body": [
+			".wait('$1');$0"
+		],
+		"description": "element wait"
+	},
+    "Cypress each": {
+		"prefix": "cyEach",
+		"body": [
+			".each((${1:$el}, ${2:index}, ${3:$list}) => {",
+            "   ${4:// code here}",
+            "});$0"
+		],
+		"description": "each"
+	},
+    "Cypress log": {
+		"prefix": "cyLog",
+		"body": [
+			"cy.log('$1');$0"
+		],
+		"description": "log"
+	},
+    "Cypress pause": {
+		"prefix": "cyPause",
+		"body": [
+			"cy.pause();$0"
+		],
+		"description": "pause"
+	},
+    "Cypress screenshot": {
+		"prefix": "cyScreenshot",
+		"body": [
+			"cy.screenshot('$1');$0"
+		],
+		"description": "screenshot"
+	},
+    "Cypress debug": {
+		"prefix": "cydebug",
+		"body": [
+			"cy.debug();$0"
+		],
+		"description": "debug"
+	},
+    "Cypress viewport": {
+		"prefix": "cyViewport",
+		"body": [
+			"cy.viewport(${1:width}, ${2:height});$0"
+		],
+		"description": "viewport"
+	},
+    "Cypress Go Back": {
+		"prefix": "cyGoBack",
+		"body": [
+			"cy.go('back');$0"
+		],
+		"description": "go back"
+	},
+    "Cypress Go Forward": {
+		"prefix": "cyGoForward",
+		"body": [
+			"cy.go('forward');$0"
+		],
+		"description": "go forward"
+	},
+    "Cypress select": {
+		"prefix": "cySelect",
+		"body": [
+			".select('$1');$0"
+		],
+		"description": "select"
+	},
+    "Cypress selectFile": {
+		"prefix": "cySelectFile",
+		"body": [
+			".selectFile('$1');$0"
+		],
+		"description": "selectFile"
+	},
+    "Cypress clear All Cookies": {
+		"prefix": "cyClearAllCookies",
+		"body": [
+			"cy.clearAllCookies();$0"
+		],
+		"description": "clear All Cookies"
+	},
+    "Cypress clear All Local Storage": {
+		"prefix": "cyClearAllLocalStorage",
+		"body": [
+			"cy.clearAllLocalStorage();$0"
+		],
+		"description": "clear All Local Storage"
+	},
+    "Cypress clear All Session Storage": {
+		"prefix": "cyClearAllSessionStorage",
+		"body": [
+			"cy.clearAllSessionStorage();$0"
+		],
+		"description": "clear All Session Storage"
+	},
+    "Cypress Force": {
+		"prefix": "cyForce",
+		"body": [
+			"{ force: ${1:true} }$0"
+		],
+		"description": "force"
+	},
+    "Cypress Request Get": {
+        "prefix": "cyRequestGet",
+        "body": [
+            "cy.request('${1:url}')",
+            "  .then((response) => {",
+            "   expect(response.status).to.have.eq(200);",
+            "   ${2:// assertion code here}",
+            "});$0"
+        ],
+        "description": "Cypress Request - GET method"
+      },
+      "Cypress Request POST": {
+        "prefix": "cyRequestPost",
+        "body": [
+            "cy.request({",
+            "    method: 'POST',",
+            "    url: '${1:url}',",
+            "    body: {",
+            "      ${2:parameters}: '${3:value}'",
+            "    },",
+            "  }).then((response) => {",
+            "    expect(response.body).to.have.property('${4:parameters}', '${5:value}');",
+            "  });$0"
+        ],
+        "description": "Cypress Request - POST method"
+      },
+      "Cypress Request PUT": {
+        "prefix": "cyRequestPut",
+        "body": [
+            "cy.request({",
+            "    method: 'PUT',",
+            "    url: '${1:url}',",
+            "    body: {",
+            "      ${2:parameters}: '${3:value}'",
+            "    },",
+            "  }).then((response) => {",
+            "    expect(response.body).to.have.property('${4:parameters}', '${5:value}');",
+            "  });$0"
+        ],
+        "description": "Cypress Request - PUT method"
+      },
+      "Cypress Request DELETE": {
+        "prefix": "cyRequestDelete",
+        "body": [
+            "cy.request({",
+            "    method: 'DELETE',",
+            "    url: '${1:url}',",
+            "  }).then((response) => {",
+            "    ${2:expect(response.status).to.eq(204);}",
+            "  });$0"
+        ],
+        "description": "Cypress Request - DELETE method"
+      },
+      "Cypress Intercept": {
+        "prefix": "cyIntercept",
+        "body": [
+            "cy.intercept(",
+            "    '${1:method}',",
+            "    '${2:url}'",
+            "   ).as('${3:name}');$0"
+        ],
+        "description": "Cypress Intercept"
+      },
+      "Cypress Intercept Fixure": {
+        "prefix": "cyInterceptFixture",
+        "body": [
+            "cy.intercept(",
+            "    '${1:method}',",
+            "    '${2:url}',",
+            "    {",
+            "      fixture: '${3:example.json}',",
+            "    },",
+            "   ).as('${4:name}');$0"
+        ],
+        "description": "Cypress Intercept Fixture"
+      },
+      "Cypress Intercept Status Code": {
+        "prefix": "cyInterceptStatusCode",
+        "body": [
+            "cy.intercept(",
+            "    '${1:method}',",
+            "    '${2:url}',",
+            "    {",
+            "      statusCode: ${3:500},",
+            "    },",
+            "   ).as('${4:name}');$0"
+        ],
+        "description": "Cypress Intercept Status Code"
+      },
+      "Cypress Command Add": {
+        "prefix": "cyCommandAdd",
+        "body": [
+            "Cypress.Commands.add('${1:Name}', (${2:Parameters}) => {",
+            "   ${3:// code here}",
+            "  });$0"
+        ],
+        "description": "Cypress Command Add"
+      },
+}

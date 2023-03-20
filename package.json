@@ -1,0 +1,43 @@
+{
+  "name": "cypress-snippets",
+  "displayName": "Cypress Snippets",
+  "description": "Help with automatic code insertion of commonly used Cypress functions.",
+  "icon": "icon.png",
+  "repository": "https://github.com/angelleoneltorrelopez/cypress-snippets",
+  "version": "0.0.1",
+  "publisher": "angelleoneltorrelopez",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "cypress",
+    "e2e",
+    "automatic tests",
+    "end-to-end tests",
+    "qa"
+  ],
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+    },
+    {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+    },
+    {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+    },
+    {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.code-snippets"
+    }
+    ]
+  }
+}
