@@ -4,7 +4,7 @@
         "body": [
             "describe('${1:This is your test project title}', () => {",
             "   beforeEach(() => {",
-            "       cy.visit('${2:url}')",
+            "       cy.visit('${2:url}');",
             "   })",
             "   it('${3:test case description}', () => {",
             "       ${4:// code here}",
@@ -25,7 +25,7 @@
     "Cypress context": {
 		"prefix": "cyContext",
 		"body": [
-			"context('$1', () => {",
+			"context('${1:Context}', () => {",
 			"   ${0:// code here}",
 			"});"
 		],
@@ -52,7 +52,7 @@
     "Cypress it": {
 		"prefix": "cyIt",
 		"body": [
-			"it('$1', () => {",
+			"it('${1:Test description}', () => {",
 			"   ${0:// code here}",
 			"});"
 		],
@@ -86,70 +86,70 @@
     "Cypress get": {
 		"prefix": "cyGet",
 		"body": [
-			"cy.get('$1');$0"
+			"cy.get('${1:selector}')$0"
 		],
 		"description": "get"
 	},
     "Cypress check": {
 		"prefix": "cyCheck",
 		"body": [
-			"cy.get('$1').check('$2');$0"
+			".check($1)$0"
 		],
 		"description": "check"
 	},
     "Cypress uncheck": {
 		"prefix": "cyUncheck",
 		"body": [
-			".uncheck('$1');$0"
+			".uncheck($1)$0"
 		],
 		"description": "uncheck"
 	},
     "Cypress contains": {
 		"prefix": "cyContains",
 		"body": [
-			".contains('$1');$0"
+			".contains('${1:content}')$0"
 		],
 		"description": "contains"
 	},
     "Cypress find": {
 		"prefix": "cyFind",
 		"body": [
-			".find('$1');$0"
+			".find('${1:selector}')$0"
 		],
 		"description": "find"
 	},
     "Cypress type": {
 		"prefix": "cyType",
 		"body": [
-			".type('$1');$0"
+			".type('${1:text}')$0"
 		],
 		"description": "type"
 	},
     "Cypress clear": {
 		"prefix": "cyClear",
 		"body": [
-			".clear($1);$0"
+			".clear($1)$0"
 		],
 		"description": "clear"
 	},
     "Cypress click": {
 		"prefix": "cyClick",
 		"body": [
-			".click($1);$0"
+			".click($1)$0"
 		],
 		"description": "click"
 	},
     "Cypress dblclick": {
 		"prefix": "cyDblClick",
 		"body": [
-			".dblclick($1);$0"
+			".dblclick($1)$0"
 		],
 		"description": "dblclick"
 	},
     "Cypress rightclick": {
 		"prefix": "cyRightClick",
 		"body": [
-			".rightclick($1);$0"
+			".rightclick($1)$0"
 		],
 		"description": "rightclick"
 	},
@@ -163,7 +163,7 @@
     "Cypress wait element": {
 		"prefix": "cyWaitElement",
 		"body": [
-			".wait('$1');$0"
+			".wait('$1')$0"
 		],
 		"description": "element wait"
 	},
@@ -179,7 +179,7 @@
     "Cypress log": {
 		"prefix": "cyLog",
 		"body": [
-			"cy.log('$1');$0"
+			"cy.log($1);$0"
 		],
 		"description": "log"
 	},
@@ -198,7 +198,7 @@
 		"description": "screenshot"
 	},
     "Cypress debug": {
-		"prefix": "cydebug",
+		"prefix": "cyDebug",
 		"body": [
 			"cy.debug();$0"
 		],
@@ -228,14 +228,14 @@
     "Cypress select": {
 		"prefix": "cySelect",
 		"body": [
-			".select('$1');$0"
+			".select('$1')$0"
 		],
 		"description": "select"
 	},
     "Cypress selectFile": {
 		"prefix": "cySelectFile",
 		"body": [
-			".selectFile('$1');$0"
+			".selectFile('$1')$0"
 		],
 		"description": "selectFile"
 	},

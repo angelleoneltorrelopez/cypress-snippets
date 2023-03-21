@@ -1,6 +1,6 @@
 {
-  "name": "cypress-snippets",
-  "displayName": "Cypress Snippets",
+  "name": "cypress-snippets-v2",
+  "displayName": "Cypress Snippets v2",
   "description": "Help with automatic code insertion of commonly used Cypress functions.",
   "icon": "icon.png",
   "repository": "https://github.com/angelleoneltorrelopez/cypress-snippets",
